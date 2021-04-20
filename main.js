@@ -16,7 +16,8 @@ function onLoadPage(){
     let productNumber= localStorage.getItem('cartNumber')
 
     if(productNumber){
-        document.querySelector('.cart span').textContent=0;
+        document.querySelector('.cart span').textContent= 0;
+        localStorage.clear()
 
     }
 
